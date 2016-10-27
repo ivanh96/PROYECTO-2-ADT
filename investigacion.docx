@@ -242,3 +242,76 @@ Posible Significado
 
 Me parece buena la idea de una página o una app que me recomiende peliculas relacionadas con las anteriores que ya he visto. Considero que es importante que sea facil de buscar peliculas  tambien. 
 Ella busca una aplicación que le sea fácil de utilizar y también que le recomiende con bastante precisión películas relacionadas con las que ella ya ha visto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propuesta de ideas de solución del problema:
+
+
+Como propuesta, se planteó la creación de un sistema de búsqueda para películas, en las cuales se podrán ver recomendaciones conforme a las películas que han visto anteriormente, según su género u otros aspectos que influyen en el tipo de película. 
+
+
+Prototipo de baja fidelidad: 
+
+
+
+
+
+Pseudocódigo:
+Inicio
+Ver película
+Calificar película de 1 a 5
+Hacer recomendación SI o NO
+Mostrar películas recomendadas, a partir del género de la película vista, con calificación dada por otros usuarios
+Si ve la película, repetir
+
+
+
+
+Repositorio de Github:
+https://github.com/ivanh96
