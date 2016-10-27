@@ -15,3 +15,18 @@ Diseño de un algoritmo hacer recomendaciones
 
 
 INVESTIGACIÓN
+
+
+DEFINICIÓN DEL PROBLEMA:
+
+
+Los sistemas de búsqueda son muy importantes, y al tener mucha variedad, se amplían conforme a varios campos, entre estos, el sistema de películas. Como proyecto, se propuso este sistema, ya que es uno de los cuales los mecanismos de búsqueda se necesitan más y se pueden explicar de mejor manera. 
+
+
+DIFERENTES ALGORITMOS DE RECOMENDACIÓN:
+
+
+Filtro colaborativo: se basan en recolección y el análisis de una gran cantidad de información sobre los usuarios y sus conductas, actividades o preferencias y predecir lo que los usuarios van a recibir en función de su similitud con otros usuarios. Una ventaja clave de este enfoque es que no se basa contenido analizable por computadora, y por lo tanto es capaz de recomendar con precisión artículos complejos, tales como películas sin necesidad de un "entendimiento" del artículo en sí mismo. 
+
+
+Filtro del contenido: se basa en una descripción del elemento y un perfil de preferencias del usuario. En un sistema de recomendación basada en el contenido, las palabras clave se usan para describir los artículos; al lado, un perfil de usuario se construye para indicar el tipo de elemento que a este usuario le gusta. En otras palabras, estos algoritmos tratan de recomendar los elementos que son similares a las que un usuario le gusta. En particular, varios artículos que son candidatos se comparan con los elementos previamente valorados por el usuario y se recomiendan los elementos de mejor coincidencia. Este enfoque tiene sus raíces en la recuperación de información y la información de investigación de la filtración.
