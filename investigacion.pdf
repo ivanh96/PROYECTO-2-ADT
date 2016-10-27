@@ -30,3 +30,14 @@ Filtro colaborativo: se basan en recolección y el análisis de una gran cantida
 
 
 Filtro del contenido: se basa en una descripción del elemento y un perfil de preferencias del usuario. En un sistema de recomendación basada en el contenido, las palabras clave se usan para describir los artículos; al lado, un perfil de usuario se construye para indicar el tipo de elemento que a este usuario le gusta. En otras palabras, estos algoritmos tratan de recomendar los elementos que son similares a las que un usuario le gusta. En particular, varios artículos que son candidatos se comparan con los elementos previamente valorados por el usuario y se recomiendan los elementos de mejor coincidencia. Este enfoque tiene sus raíces en la recuperación de información y la información de investigación de la filtración.
+
+
+
+
+
+
+Recomendación híbrida: se basa en combinar el filtrado colaborativo y filtrado basado en contenido, lo que podría ser más eficaz en algunos casos. enfoques híbridos pueden implementarse de varias maneras, al hacer predicciones basadas en colaborativas y del contenido por separado y luego combinarlas, mediante la adición de capacidades basadas en el contenido a un enfoque basado en la colaboración, o mediante la unificación de los enfoques en un solo modelo.
+
+
+
+
