@@ -22,7 +22,7 @@ import org.neo4j.graphdb.Transaction;
 
 public class Queries {
     
-    static Result resultado, resultado1, resultado2, resultado3;
+    static Result resultado, resultado1, resultado2, resultado3,resultado4;
     
     public Node findUser(GraphDatabaseService DB, String nombre){
         
@@ -44,6 +44,8 @@ public class Queries {
             while (r1.hasNext()){
                 if(r1.next().equals(nombre)){
                     res1.add(r2.next());
+                }else{
+                    r2.next();
                 }
             }
             tx.success();
@@ -63,7 +65,7 @@ public class Queries {
             //Se agregan los datos a la lista
             while (r1.hasNext()){
                 if(r1.next().equals(nombre)){
-                    
+                    r2.next();
                 }else{
                     res1.add(r2.next());
                 }
@@ -72,5 +74,13 @@ public class Queries {
             return res1;
         }     
         
+    }
+    
+    public String toString(LinkedList<String> lista){
+        String converted = "";
+        for(int i=0;i<lista.size()-1;i++){
+            converted = converted + lista.get(i) + ", ";
+        }
+        return converted;
     }
 }
