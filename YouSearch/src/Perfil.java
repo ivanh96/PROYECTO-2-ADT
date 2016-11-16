@@ -52,7 +52,7 @@ public class Perfil {
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setBounds(0, 0, 1262, 682);
-		lblNewLabel.setIcon(new ImageIcon(System.getProperty("user.dir") + "\\YouSearch\\YouSearch.png"));
+		lblNewLabel.setIcon(new ImageIcon(System.getProperty("user.dir") + "\\YouSearch.png"));
 		frame.getContentPane().add(lblNewLabel);
 	}
 
