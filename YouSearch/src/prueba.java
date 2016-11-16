@@ -5,10 +5,10 @@
  * Descripción:
     Sistema de recomendación de películas
  * Integrantes:
-    Paulina Cano - 15
-    Marlon Hernández - 15
-    Andrés Girón - 15
-    Brandon Hernández - 15
+    Paulina Cano - 15053
+    Marlon Hernández - 15144
+    Andrés Girón - 15174
+    Brandon Hernández - 15326
  * prueba.java
     clase para probar el funcionamiento del programa
  */

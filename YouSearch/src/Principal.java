@@ -1,3 +1,18 @@
+/*
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos
+ * PROYECTO 2 - YouSearch
+ * Descripción:
+    Sistema de recomendación de películas
+ * Integrantes:
+    Paulina Cano - 15053
+    Marlon Hernández - 15144
+    Andrés Girón - 15174
+    Brandon Hernández - 15326
+ * Principal.java
+    Esta clase es la interfaz gráfica GUI para el manejo del programa
+ */
+
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JButton;
@@ -161,6 +176,20 @@ public class Principal {
 		frame1.setBounds(100, 100, 1280, 729);
 		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame1.getContentPane().setLayout(null);
+                           
+                JLabel mostrarGustos = new JLabel(gustos);
+		mostrarGustos.setHorizontalAlignment(SwingConstants.CENTER);
+		mostrarGustos.setForeground(Color.WHITE);
+		mostrarGustos.setFont(new Font("Arial Narrow", Font.BOLD, 20));
+		mostrarGustos.setBounds(50, 250, 250, 250);
+		frame1.getContentPane().add(mostrarGustos);
+                
+                JLabel mostrarRecomendaciones = new JLabel(recomendacion);
+		mostrarRecomendaciones.setHorizontalAlignment(SwingConstants.CENTER);
+		mostrarRecomendaciones.setForeground(Color.YELLOW);
+		mostrarRecomendaciones.setFont(new Font("Arial Narrow", Font.PLAIN, 20));
+		mostrarRecomendaciones.setBounds(50, 581, 250, 250);
+		frame1.getContentPane().add(mostrarRecomendaciones);
 		
 		JButton salida = new JButton("");
                 salida.addActionListener(new ActionListener() {
@@ -179,19 +208,5 @@ public class Principal {
 		fondo.setBounds(0, 0, 1262, 682);
 		fondo.setIcon(new ImageIcon(System.getProperty("user.dir") + "\\images\\YouSearch.png"));
 		frame1.getContentPane().add(fondo);
-                                             
-                JLabel mostrarGustos = new JLabel(gustos);
-		mostrarGustos.setHorizontalAlignment(SwingConstants.CENTER);
-		mostrarGustos.setForeground(Color.WHITE);
-		mostrarGustos.setFont(new Font("Arial Narrow", Font.BOLD, 20));
-		mostrarGustos.setBounds(50, 250, 250, 250);
-		frame1.getContentPane().add(mostrarGustos);
-                
-                JLabel mostrarRecomendaciones = new JLabel(recomendacion);
-		mostrarRecomendaciones.setHorizontalAlignment(SwingConstants.CENTER);
-		mostrarRecomendaciones.setForeground(Color.YELLOW);
-		mostrarRecomendaciones.setFont(new Font("Arial Narrow", Font.PLAIN, 20));
-		mostrarRecomendaciones.setBounds(50, 581, 250, 250);
-		frame1.getContentPane().add(mostrarRecomendaciones);
 	}
 }
