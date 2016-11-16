@@ -14,36 +14,19 @@
  */
 
 import java.io.File;
-import java.util.ArrayList;
-import org.neo4j.graphdb.Direction;
 import org.neo4j.graphdb.GraphDatabaseService;
-import org.neo4j.graphdb.Label;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
-import org.neo4j.graphdb.RelationshipType;
-import org.neo4j.graphdb.Result;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
-import java.util.LinkedList;
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.Vector;
 
 public class DataBase {
     
     public DataBase(){ }
     
     //Aquí se cargan todos los valores de la base de datos, donde se aloja todo lo que ya está contenido en ella
-    public void levantarDataBase(){
-        
-        //Fabrica para crear base de datos
-        GraphDatabaseFactory Factory = new GraphDatabaseFactory();
-        //Dirección de la base de datos, cambia dependiendo de c/computadora
-        File directorio = new File("C:\\Users\\usuario\\Documents\\Neo4j\\default.graphdb");
-        //Se utiliza el objeto tipo file para ingresar al archivo del grafo
-        GraphDatabaseService DB = Factory.newEmbeddedDatabase(directorio);
-        DB.execute("MATCH (n)\n" + "OPTIONAL MATCH (n)-[r]-()\n" + "DELETE n,r");
-        
+    public void levantarDataBase(GraphDatabaseService DB){
+               
         //Se intenta realizar una transacción u operación en Neo4j
         try (Transaction tx = DB.beginTx()){
             
